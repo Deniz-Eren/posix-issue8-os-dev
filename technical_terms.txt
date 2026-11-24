@@ -1,0 +1,141 @@
+# Copyright (c) 2026 Deniz Eren <deniz.eren@outlook.com>
+# SPDX-License-Identifier: MIT
+
+# technical_terms.txt — project-specific technical nouns and technical verbs
+# accepted during Simplified Technical English checks.
+#
+# The subject field of this repository is operating system development targeting
+# POSIX.1-2024 (IEEE Std 1003.1-2024 / ISO/IEC/IEEE 9945:2026). Domain terms
+# from computer science, systems, documentation, and general engineering are
+# recorded here so a Simplified Technical English checker accepts them when
+# present.
+#
+# Format: one term on each line. Everything after '#' is a comment.
+
+# --- Technical nouns: files, documents, and data ---
+file             # a collection of data in a file system
+list             # an ordered set of items
+log              # a recorded output of a program
+cache            # stored copies of fetched data
+column           # one field of a table row
+section          # a part of a document
+heading          # the title of a document part
+reference        # a document or page that other text points to
+prompt           # the input specification document (init prompt)
+note             # a short remark in a document
+specification    # a formal standard or requirement document
+manifest         # the factual index file of this repository
+glossary         # the term list
+changelog        # the change record file
+baseline         # the reference level
+trademark        # a registered trade name
+conformance      # agreement with a standard
+failure          # the condition when something does not operate correctly
+security         # protection against unauthorized access
+feature          # a function or property of a standard or product
+
+# --- Technical nouns: programming and operating systems ---
+code             # program source text
+interface        # a function or header that a system exposes
+implementation   # a system that targets a standard
+identifier       # a name of a code object
+namespace        # a set of reserved identifier names
+header           # a C system header file
+macro            # a C preprocessor macro
+kernel           # the core of an operating system
+libc             # the C standard library of an operating system
+syscall          # a kernel system call interface
+utility          # a program of the shell and utilities volume
+pathname         # a file path name
+slug             # the file name form of a URL path
+thread           # an execution thread
+semaphore        # a synchronization object
+mutex            # a mutual exclusion lock
+barrier          # a synchronization object
+spinlock         # a busy-wait lock
+errno            # the thread-local error number object
+process          # a program in execution (operating system meaning)
+program          # a set of instructions that a computer runs
+variable         # a named storage location
+profile          # a conformance profile of a standard
+option           # a standard option group
+base             # the mandatory conformance level (the Base)
+state            # the condition of a document or machine
+row              # one record in a TSV table
+entry            # one item in an index
+gate             # one automated check of the validation plan
+audit            # a systematic check of data or tags
+runtime          # the support library of a language
+liveness         # the property that a URL answers
+diff             # the result of a comparison
+venv             # the Python virtual environment directory
+pytest           # the test framework name
+ruff             # the linter and formatter name
+ctest            # the CMake test driver name
+cmake            # the build tool name
+subsystem        # a part of the operating system
+gotcha           # a trap for the implementer (project term)
+tooling          # the set of development tools
+formatting       # the arrangement of source text
+versioning       # the assignment of version numbers
+routing          # the mapping of identifiers to URLs
+scaffolding      # the generated governance structure
+quoting          # the shell quoting rules
+locking          # holding a lock on a resource
+scheduling       # the assignment of execution order
+splitting        # the field splitting of shell words
+pending          # waiting to be processed (cancellation state)
+
+# --- Technical verbs ---
+run              # start a program or check
+build            # produce the build outputs
+link             # make a hyperlink or reference to something
+route            # map an identifier to its URL
+fetch            # get data from a remote location
+commit           # record a change in git
+tag              # give a tag to a release
+lint             # run the static checks on code
+format           # arrange code with the formatter
+compile          # translate source code
+parse            # read structured input
+scan             # examine files with a checker
+extract          # take specific facts from a source
+generate         # produce output from a program
+define           # give the meaning or value of something
+design           # plan the structure of a system
+expose           # make an interface available to applications
+guard            # protect a declaration behind a macro
+call             # transfer execution to a function
+return           # give a result back to the caller
+validate         # check a thing against its requirements
+verify           # examine a thing against its requirements
+audit            # do a systematic check
+implement        # write the code for a requirement
+diff             # compare two sets
+refactor         # change the structure of code
+fork             # create a copy of a process or repository
+debug            # find the cause of a fault
+fail             # not succeed (of a check or gate)
+
+# --- Git, checking, and document terms ---
+branch           # a line of development in git
+review           # a code or document review
+finding          # one problem that a checker reports
+block            # a block of text or code
+resolve          # map a name or URL to its target
+meaning          # what a word or rule says
+wording          # the choice of words in a document
+acquire          # the acquire operation of a memory ordering model
+load             # read a value from memory (concurrency)
+store            # write a value to memory (concurrency)
+synchronize      # make threads agree on memory state
+disposition      # the handling mode of a signal
+
+# --- Noun uses of technical verbs ---
+# Domain terms used as both technical verbs and technical nouns.
+commit           # one recorded change in git
+tag              # the option tag of a specification page
+fork             # a child process that the fork call makes
+acquire          # an acquire operation of the memory ordering model
+checker          # the tool that scans text and reports findings
+guide            # a document that gives direction on a style or procedure

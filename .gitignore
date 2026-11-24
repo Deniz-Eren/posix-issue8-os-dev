@@ -1,0 +1,30 @@
+# CMake build directory (out of source, ADR-11)
+build/
+
+# Python artifacts
+*.pyc
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Development environment
+.venv/
+.env
+
+# Validation URL cache
+.url-cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Do not ignore source files. Do not add patterns for src/, include/, or tests/.
+# Do not use broad globs. A glob such as build-* can match project directories.

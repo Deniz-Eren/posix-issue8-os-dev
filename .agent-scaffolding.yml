@@ -1,0 +1,61 @@
+# agent-scaffolding configuration.
+# Written by the agent-scaffolding agent skill. Commit this file.
+# After you change this file, apply the skill again in "apply" mode.
+
+skill_version: "0.2.0"
+
+project:
+  name: "posix-issue8-os-dev"
+  description: "Write and audit OS kernels, syscalls, libc, system headers, sh, and core utilities working toward POSIX.1-2024 compatibility against The Open Group Base Specifications Issue 8 (IEEE Std 1003.1-2024 / ISO/IEC/IEEE 9945:2026), with deterministic URL routing and automated skill-level coverage validation."
+  type: mixed               # the skill content (Markdown) plus validation tooling (Python)
+  languages: [python, markdown]
+  language_standard: "Python 3.14"
+  platforms: [posix, linux]
+  license: "MIT License"
+  license_file: "LICENSE.md"
+  copyright: "Copyright (c) 2026 Deniz Eren <deniz.eren@outlook.com>"  # resolved from identity.current_user
+
+# Build: cmake (task runner for the tooling). Test: pytest through CTest. Lint: ruff. Format: ruff.
+
+operations:
+  commit_mode: autonomous
+  build_system: cmake
+  test_framework: pytest
+  linter: ruff
+  formatter: ruff
+  build_convention: out-of-source
+  dev_environment: none     # no module files; the tools run in a venv from requirements.txt
+
+# "current_user" = the name and the email of the current user. The agents read
+# them from the git configuration of the environment (git config user.name,
+# git config user.email). A project can also put a fixed name and email here.
+identity:
+  git_author_name: current_user
+  git_author_email: current_user
+
+modules:                    # defaults: references/INTERVIEW.md §3
+  dev_environment: false
+  build_agents: false
+  tool_configs: true
+  boilerplate: false        # the init prompt defines all deliverables
+  copyright: true
+  agent_platforms: []       # the repository root is the installable skill; no agent directories
+
+specs:                      # specifications that the skill copies into the project
+  commits: true
+  semver: true
+  skills: true
+
+exclude_paths: []           # paths that verify.sh does not examine, for example [vendor, third_party]
+
+pre_existing_documents:
+  - label: Init prompt
+    source: docs/init-prompt.md
+    destination: docs/init-prompt.md
+    policy: immutable       # edits need user authorization
+    notes: "The specification for this skill repository."
+  - label: Validation plan
+    source: docs/validation-plan.md
+    destination: docs/validation-plan.md
+    policy: immutable       # edits need user authorization
+    notes: "The reference specification for the validation architecture."

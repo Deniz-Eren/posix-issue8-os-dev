@@ -1,0 +1,137 @@
+# Copyright (c) 2026 Deniz Eren <deniz.eren@outlook.com>
+# SPDX-License-Identifier: MIT
+
+# allowed_phrases.txt — multi-word technical phrases accepted as single
+# technical terms during Simplified Technical English checks.
+#
+# Subject field: operating system development targeting POSIX.1-2024
+# (IEEE Std 1003.1-2024 / ISO/IEC/IEEE 9945:2026).
+#
+# Format: one phrase on each line. Everything after '#' is a comment.
+
+# --- Technical phrases ---
+operating system
+operating systems
+source code
+feature test macro
+feature-test macro
+feature test macros
+option group
+option groups
+conformance group
+conformance groups
+cancellation point
+cancellation points
+async-signal-safe
+system interface
+system interfaces
+system header
+system headers
+core utility
+core utilities
+translation unit
+translation units
+canonical URL
+canonical URLs
+conformance test
+conformance tests
+test suite
+test suites
+test case
+test cases
+build system
+commit mode
+commit message
+commit messages
+pull request
+working tree
+virtual environment
+file system
+file systems
+file descriptor
+file descriptors
+signal handler
+signal handlers
+shell command
+command substitution
+word expansion
+exit status
+exit statuses
+memory ordering
+shared memory
+message queue
+message queues
+realtime threads
+man page
+URL routing
+option tag
+option tags
+margin code
+margin codes
+conformance profile
+conformance profiles
+development environment
+agent skill
+agent skills
+skill repository
+skill surface
+context budget
+anti-scraping
+
+# --- Proper names of standards, tools, and specifications ---
+Conventional Commits
+Keep a Changelog
+Semantic Versioning
+The Open Group
+Open Group
+Base Definitions
+System Interfaces
+Shell and Utilities
+Issue 8
+IEEE Std 1003.1-2024
+X/Open System Interfaces
+Open POSIX Test Suite
+Linux Test Project
+libc-test
+Agent Skills
+Assisted-by
+Predict Act Verify
+Failure Modes
+Pre-Commit Checklist
+Git Protocol
+Commit Mode
+Token and Context Management
+Boundaries for CLI Commands
+Purpose
+Structure
+Formatting Rules
+Context
+Decision
+Alternatives
+Consequences
+edge case
+edge cases
+leading option tag
+error handling
+line wrapping
+software engineering
+breaking change
+breaking changes
+code review
+state document
+state documents
+init prompt
+validation plan
+validation gates
+validation gate
+URL lookup
+lookup protocol
+feature-test macros
+version constants
+trademark notice
+Predict → Act → Verify
+call graph
+quote removal
+edge-case
+Edge-Case
+message passing
